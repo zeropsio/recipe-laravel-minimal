@@ -40,11 +40,14 @@ zerops:
         LOG_LEVEL: debug
         LOG_STACK: single
 
-        MAIL_FROM_ADDRESS: hello@example.com
-        MAIL_FROM_NAME: LaravelMinimalZerops
-        MAIL_HOST: mailpit
-        MAIL_MAILER: smtp
-        MAIL_PORT: 1025
+        MAIL_MAILER: log
+        MAIL_HOST: 127.0.0.1
+        MAIL_PORT: 2525
+        MAIL_USERNAME: null
+        MAIL_PASSWORD: null
+        MAIL_ENCRYPTION: null
+        MAIL_FROM_ADDRESS: "hello@zerops.io"
+        MAIL_FROM_NAME: "${APP_NAME}"
 
         SESSION_DRIVER: database
         SESSION_LIFETIME: 120

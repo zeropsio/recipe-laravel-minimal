@@ -21,7 +21,6 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 - Proper setup for Laravel **cache**, **optimization**, and **database migrations**
 - Logs set up to use **syslog** and accessible through Zerops GUI
 - Utilization of Zerops built-in **environment variables** system
-- [Mailpit](https://github.com/axllent/mailpit) as **SMTP mock server**
 - [Adminer](https://www.adminer.org) for **quick database management** tool
 
 <br/>
@@ -42,7 +41,7 @@ Base of the recipe is ready for production, the difference comes down to:
 If you want to modify your existing Laravel/Jetstream app to efficiently run on Zerops, these are the general steps we took:
 
 - Add [zerops.yml](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml) to your repository, our example includes database migrations
-- Utilize Zerops [environment variables](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml#L22-L59) and [secrets](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops-project-import.yml#L13-L16) to setup PostgreSQL database connection, Mailpit SMTP settings
+- Utilize Zerops [environment variables](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml#L22-L59) and [secrets](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops-project-import.yml#L13-L16) to setup PostgreSQL database connection
 - And trustedproxy config to work with reverse proxy load balancer
 
 <br/>

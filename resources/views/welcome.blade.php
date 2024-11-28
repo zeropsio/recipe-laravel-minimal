@@ -68,22 +68,6 @@
                                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                         Current number of active sessions in database: {{ $sessionsCount }}
                                     </p>
-
-                                    @if(config('app.env') !== 'production')
-                                        <div class="mt-4 p-4 bg-blue-50 dark:bg-blue-900/50 rounded-lg">
-                                            <p class="text-sm text-blue-600 dark:text-blue-200">
-                                                ✉️ Welcome email has been sent.
-
-                                                @if(config('app.mailpit_zerops_subdomain'))
-                                                    <a href="{{ config('app.mailpit_zerops_subdomain') }}"
-                                                       target="_blank"
-                                                       class="mt-4 inline-flex items-center text-sm text-blue-600 dark:text-blue-300 hover:underline">
-                                                        👉 View sent email in Mailpit
-                                                    </a>
-                                                @endif
-                                            </p>
-                                        </div>
-                                    @endif
                                 </div>
                             </div>
                         </div>

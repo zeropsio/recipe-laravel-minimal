@@ -1,0 +1,21 @@
+#yamlPreprocessor=on
+project:
+  name: recipe-filament
+  tags:
+    - zerops-recipe
+    - production
+
+services:
+  - hostname: app
+    type: php-nginx@8.3
+    buildFromGit: https://github.com/zeropsio/recipe-filament
+    enableSubdomainAccess: true
+    envSecrets:
+      APP_KEY: <@generateRandomString(<32>)>
+      APP_DEBUG: false
+      APP_ENV: production
+
+  - hostname: db
+    type: postgresql@16
+    mode: HA
+    priority: 10

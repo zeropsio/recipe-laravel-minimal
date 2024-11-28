@@ -1,6 +1,6 @@
 #yamlPreprocessor=on
 project:
-  name: recipe-filament
+  name: recipe-laravel-minimal
   tags:
     - zerops-recipe
     - production
@@ -8,7 +8,7 @@ project:
 services:
   - hostname: app
     type: php-nginx@8.3
-    buildFromGit: https://github.com/zeropsio/recipe-filament
+    buildFromGit: https://github.com/zeropsio/recipe-laravel-minimal
     enableSubdomainAccess: true
     envSecrets:
       APP_KEY: <@generateRandomString(<32>)>

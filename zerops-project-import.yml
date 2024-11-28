@@ -7,8 +7,8 @@ project:
 
 services:
   - hostname: app
-    type: php-nginx@8.3
-    buildFromGit: https://github.com/krls2020/recipe-laravel-minimal
+    type: php-nginx@8.4
+    buildFromGit: https://github.com/zeropsio/recipe-laravel-minimal
     enableSubdomainAccess: true
     envSecrets:
       APP_KEY: <@generateRandomString(<32>)>
@@ -24,6 +24,7 @@ services:
     type: go@1
     buildFromGit: https://github.com/zeropsio/recipe-mailpit@alpha
     enableSubdomainAccess: true
+    priority: 1
 
   - hostname: adminer
     type: php-apache@8.3

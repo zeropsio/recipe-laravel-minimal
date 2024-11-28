@@ -2,7 +2,7 @@ zerops:
   - setup: app
     build:
       base:
-        - php@8.3
+        - php@8.4
       os: alpine
       buildCommands:
         - composer install --ignore-platform-reqs
@@ -16,7 +16,7 @@ zerops:
           port: 80
           path: /up
     run:
-      base: php-nginx@8.3
+      base: php-nginx@8.4
       os: alpine
       siteConfigPath: site.conf.tmpl
       envVariables:
@@ -57,7 +57,6 @@ zerops:
         QUEUE_CONNECTION: database
 
         CACHE_STORE: database
-
 
       initCommands:
         - php artisan view:cache

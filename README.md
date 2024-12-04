@@ -21,7 +21,6 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 - Proper setup for Laravel **cache**, **optimization**, and **database migrations**
 - Logs set up to use **syslog** and accessible through Zerops GUI
 - Utilization of Zerops built-in **environment variables** system
-- [Adminer](https://www.adminer.org) for **quick database management** tool
 
 <br/>
 

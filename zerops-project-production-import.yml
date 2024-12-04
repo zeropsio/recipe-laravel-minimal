@@ -1,6 +1,7 @@
 #yamlPreprocessor=on
 project:
-  name: recipe-laravel-minimal
+  name: laravel-minimal-prod
+  corePackage: SERIOUS
   tags:
     - zerops-recipe
     - production
@@ -10,6 +11,7 @@ services:
     type: php-nginx@8.4
     buildFromGit: https://github.com/zeropsio/recipe-laravel-minimal
     enableSubdomainAccess: true
+    minContainers: 2
     envSecrets:
       APP_KEY: <@generateRandomString(<32>)>
       APP_DEBUG: false

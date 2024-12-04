@@ -1,6 +1,6 @@
 #yamlPreprocessor=on
 project:
-  name: recipe-laravel-minimal
+  name: laravel-minimal-devel
   tags:
     - zerops-recipe
     - development
@@ -19,8 +19,3 @@ services:
     type: postgresql@16
     mode: NON_HA
     priority: 10
-
-  - hostname: adminer
-    type: php-apache@8.3
-    buildFromGit: https://github.com/zeropsio/recipe-adminer@main
-    enableSubdomainAccess: true

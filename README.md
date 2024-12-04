@@ -1,6 +1,6 @@
 # Zerops x Laravel Minimal
 
-A basic [Laravel](https://www.laravel.com) 11 installation running on Zerops, utilizing PostgreSQL for database, Mailpit for local email testing, and Adminer for database management. Perfect starting point for your Laravel projects.
+A basic [Laravel](https://www.laravel.com) 11 installation running on Zerops, utilizing PostgreSQL for database and Mailpit for local email testing. Perfect starting point for your Laravel projects.
 
 
 ![laravel](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-laravel.svg)

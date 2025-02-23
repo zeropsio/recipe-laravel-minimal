@@ -38,9 +38,9 @@ Base of the recipe is ready for production, the difference comes down to:
 
 If you want to modify your existing Laravel/Jetstream app to efficiently run on Zerops, these are the general steps we took:
 
-- Add [zerops.yml](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml) to your repository, our example includes database migrations
-- Utilize Zerops [environment variables](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml#L22-L59) and [secrets](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops-project-import.yml#L13-L16) to setup PostgreSQL database connection
-- And trustedproxy config to work with reverse proxy load balancer
+- [ ] Add [zerops.yml](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml) to your repository, our example includes database migrations
+- [ ] Utilize Zerops [environment variables](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml#L22-L59) and [secrets](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops-project-import.yml#L13-L16) to setup PostgreSQL database connection
+- [ ] [And trustedproxy config](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/config/trustedproxy.php) to work with reverse proxy load balancer
 
 <br/>
 <br/>
